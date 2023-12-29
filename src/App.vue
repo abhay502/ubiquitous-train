@@ -1,18 +1,38 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  
+  <div>
+    <!-- <h1>{{name}} and he is a {{ domain }}</h1>
+    <h2 v-text="location"></h2> -->
+    <PostsList />
+    <!-- <CreatePost /> -->
+  </div>
+
 </template>
+ 
+
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import PostsList from './components/Posts.vue';
+// import CreatePost from './components/CreatePost.vue';
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    PostsList,
+    // CreatePost
+  },
+  data(){
+    return{
+      name:"Abhay S Nath",
+      domain:"Mern stack developer",
+      location:"from chennai"
+      
+    }
   }
+  
 }
 </script>
+  
+
 
 <style>
 #app {
